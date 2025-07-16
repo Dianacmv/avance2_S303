@@ -4,33 +4,40 @@ public class Usuario {
     private String nombre;
     private String contrasena;
 
-    // Constructor de la clase Usuario
+    // Constructor que recibe nombre y contraseña
     public Usuario(String nombre, String contrasena) {
         this.nombre = nombre;
         this.contrasena = contrasena;
     }
 
-    // Método para obtener el nombre de la persona usuaria
+    // Constructor adicional que solo recibe el nombre
+    // Se utiliza cuando aún no trabajamos con contraseñas
+    public Usuario(String nombre) {
+        this.nombre = nombre;
+        this.contrasena = ""; // Contraseña vacía por defecto
+    }
+
+    // Obtener el nombre de la persona usuaria
     public String getNombre() {
         return nombre;
     }
 
-    // Método para establecer el nombre de la persona usuaria
+    // Establecer el nombre de la persona usuaria
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    // Método para obtener la contraseña de la persona usuaria
+    // Obtener la contraseña de la persona usuaria
     public String getContrasena() {
         return contrasena;
     }
 
-    // Método para establecer la contraseña de la persona usuaria
+    // Establecer la contraseña de la persona usuaria
     public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
     }
 
-    // Validación simple de inicio de sesión (ejemplo básico)
+    // Método para validar los datos ingresados (validación simple)
     public boolean validar(String nombreIngresado, String contrasenaIngresada) {
         return this.nombre.equals(nombreIngresado) && this.contrasena.equals(contrasenaIngresada);
     }
