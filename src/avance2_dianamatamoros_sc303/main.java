@@ -1,20 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package avance2_dianamatamoros_sc303;
 
-/**
- *
- * @author Diana
- */
 public class main {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // Crear e iniciar la ventana de login
+        VentanaLogin login = new VentanaLogin();
+        login.setVisible(true);
     }
-    
 }

@@ -1,6 +1,7 @@
 
 package avance2_dianamatamoros_sc303;
 
+import javax.swing.JOptionPane;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
